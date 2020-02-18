@@ -2,7 +2,7 @@
   "name": "@iadvize-oss/stylelint-config",
   "version": "0.0.0",
   "description": "iAdvize stylelint rules",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "lint:js": "eslint src/*",
     "bump-changelog": "VERSION=$(cat package.json | jq '.version') && remark CHANGELOG.md -o --use @jarrodldavis/changelog-version-bump=version:$VERSION && git add CHANGELOG.md"
