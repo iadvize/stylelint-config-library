@@ -6,63 +6,9 @@ on:
     types: [closed]
 
 jobs:
-  generate-docs:
-    name: 'generate docs and push'
-    runs-on: ubuntu-18.04
-
-    steps:
-    - uses: actions/checkout@v2-beta
-      with:
-        ref: master
-        token: ${{ secrets.GITHUB_TOKEN_REPO_WRITE }}
-
-    - name: Git config
-      run: |
-        git config user.name "Github actions"
-        git config user.email "github-actions@iadvize.com"
-
-    - name: Fetch or create gh-pages
-      run: |
-        if git fetch origin gh-pages; then
-          git branch --track gh-pages origin/gh-pages
-        else
-          git checkout --orphan gh-pages
-
-          git reset .
-          git commit --allow-empty -m "Init"
-
-          git push origin gh-pages
-
-          git checkout -f master
-        fi
-
-    - uses: actions/setup-node@v1
-      with:
-        node-verion: '12.x'
-
-    - name: Install
-      run: npm ci
-
-    - name: Generate new docs
-      run: |
-        npm run docs
-
-    - name: Push gh-pages
-      run: |
-        git worktree add gh-pages-content gh-pages
-        cp -r docs/* gh-pages-content
-        cd gh-pages-content
-
-        git add .
-        git commit -m "documentation: generate new documentation"
-        git push origin gh-pages
-
   publish-beta:
     name: 'create beta version and deploy'
     runs-on: ubuntu-18.04
-
-    needs:
-    - generate-docs
 
     if:
       github.event.pull_request.merged == true && !(
@@ -145,9 +91,6 @@ jobs:
   publish-latest:
     name: 'create latest version and deploy'
     runs-on: ubuntu-18.04
-
-    needs:
-    - generate-docs
 
     if:
       github.event.pull_request.merged == true && (
