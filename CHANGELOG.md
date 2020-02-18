@@ -7,4 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- first commit
+
 [Unreleased]: https://github.com/iadvize/stylelint-config-library/compare/v0.0.0...HEAD
