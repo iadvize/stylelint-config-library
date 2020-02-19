@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
+- misc: bump @iadvize-oss/eslint-config from 0.1.0 to 0.1.1
+
+### Changed
 - misc: bump @iadvize-oss/eslint-config from 0.0.1 to 0.1.0
 
 ## [0.1.0]
