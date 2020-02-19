@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0]
+
 ### Changed
 
 -   Use prettier 
@@ -18,6 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   First commit with full config
 
-[Unreleased]: https://github.com/iadvize/stylelint-config-library/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/iadvize/stylelint-config-library/compare/v0.2.0...HEAD
+
+[0.2.0]: https://github.com/iadvize/stylelint-config-library/compare/v0.1.0...v0.2.0
 
 [0.1.0]: https://github.com/iadvize/stylelint-config-library/compare/v0.0.0...v0.1.0
