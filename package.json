@@ -4,8 +4,7 @@
   "description": "iAdvize stylelint rules",
   "main": "src/index.js",
   "scripts": {
-    "lint:js": "eslint src/*",
-    "bump-changelog": "VERSION=$(cat package.json | jq '.version') && remark CHANGELOG.md -o --use @jarrodldavis/changelog-version-bump=version:$VERSION && git add CHANGELOG.md"
+    "lint:js": "eslint src/*"
   },
   "homepage": "https://github.com/iadvize/stylelint-config-library#readme",
   "repository": {
