@@ -7,10 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0]
+
 ### Changed
 
-- update libs
-- major bump for dependabot 
+-   update libs
+-   major bump for dependabot 
 
 ## [0.2.2]
 
@@ -39,7 +41,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   First commit with full config
 
-[Unreleased]: https://github.com/iadvize/stylelint-config-library/compare/v0.2.2...HEAD
+[Unreleased]: https://github.com/iadvize/stylelint-config-library/compare/v1.0.0...HEAD
+
+[1.0.0]: https://github.com/iadvize/stylelint-config-library/compare/v0.2.2...v1.0.0
 
 [0.2.2]: https://github.com/iadvize/stylelint-config-library/compare/v0.2.1...v0.2.2
 
