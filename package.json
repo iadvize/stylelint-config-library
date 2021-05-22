@@ -23,7 +23,7 @@
   "private": false,
   "devDependencies": {
     "@iadvize-oss/eslint-config": "^2.2.0",
-    "eslint": "^7.26.0"
+    "eslint": "^7.27.0"
   },
   "peerDependencies": {
     "stylelint": "^13.2.0"
